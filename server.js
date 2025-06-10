@@ -101,8 +101,4 @@ app.get('/profile/index.html', (req, res) => {
     res.sendFile(path.join(__dirname, 'profile page', 'index.html'));
 });
 
-// Start the server
-const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => {
-    console.log(`Server running at http://localhost:${PORT}`);
-});
+module.exports = app;
